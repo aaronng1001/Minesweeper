@@ -10,7 +10,7 @@ int unclickedTiles = (NUM_ROWS*NUM_COLS)-(NUM_BOMBS);
 
 void setup ()
 {
-  size(400, 400);
+  size(400, 500);
   textAlign(CENTER, CENTER);
   // make the manager
   Interactive.make( this );
@@ -59,19 +59,19 @@ public void displayLosingMessage()
     if (bombs.get(i).isMarked() == false)
       bombs.get(i).clicked = true;
   fill(255);
-  rect(0, 0, 400, 50);
+  //rect(0, 0, 400, 50);
   fill(0);
   textSize(20);
-  text("You lose!", 200, 30);
+  text("You lose!", 200, 450);
   gameOver = true;
 }
 public void displayWinningMessage()
 {
   fill(255);
-  rect(0, 0, 400, 50);
+  //rect(0, 0, 400, 450);
   fill(0);
   textSize(20);
-  text("You win!", 200, 30);
+  text("You win!", 200, 450);
   gameOver = true;
 }
 
